@@ -14,21 +14,36 @@ export default function EmailForm() {
     ],
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
-    fetch("https://api.airtable.com/v0/appSHNyKIRPfxWh3r/tblu2aNtNlJRwZaqn", {
-      method: "POST",
-      mode: "cors",
-      headers: {
-        "Content-type": "application/json",
-        Authorization:
-          "Bearer pattVvD1XATs2iunz.b8940e6daeb84f34ac233725763b47799e76b9765cacb702b013c0c47192e0d9",
-      },
-      body: JSON.stringify(apiBodyData),
-    }).then(() => {
+    try {
+      let data = await fetch(process.env.REACT_APP_AIRTABLE_URL, {
+        method: "POST",
+        mode: "cors",
+        headers: {
+          "Content-type": "application/json",
+          Authorization: process.env.REACT_APP_EMAIL_WAITLIST_AUTH,
+        },
+        body: JSON.stringify(apiBodyData),
+      });
+      console.log(data);
       console.log("email sent");
-    });
+    } catch (err) {
+      console.log(err);
+    }
+
+    // fetch(process.env.REACT_APP_AIRTABLE_URL, {
+    //   method: "POST",
+    //   mode: "cors",
+    //   headers: {
+    //     "Content-type": "application/json",
+    //     Authorization: process.env.REACT_APP_EMAIL_WAITLIST_AUTH,
+    //   },
+    //   body: JSON.stringify(apiBodyData),
+    // }).then(() => {
+    //   console.log("email sent");
+    // });
 
     setEmailField("");
   };
