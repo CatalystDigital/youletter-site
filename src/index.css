@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Roboto+Mono:wght@600&family=Roboto:ital@0;1&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Set: Background, alt Background, Primary, Primary text - the rest will need owrk */
+    /* the off white  */
+    --color-background: 255 115 179; 
+    /* the dark blue */
+    --color-altbackground: 50 73 124; 
+    /* the teal */
+    --color-primary: 20 143 133;
+    /* the dark purple */
+    --color-secondary: 109 105 156;
+     /* the dark pink */
+    --color-highlight: 255 101 132;
+    /* the off white text */
+    --color-primarytext: 226 232 240;
+    /* grey */
+    --color-secondarytext: 111 114 185;
+    --color-highlighttext: 111 114 185;
+    --color-white: 255 255 255;
+    /* ... */
+  }
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
