@@ -23,6 +23,10 @@ module.exports = {
         800: "#1f2937",
         900: "#111827",
       },
+      YLBlueDark: "#0C97FA",
+      YLBlueLight: "#16E1F5",
+      YLYellow: "#F4B942",
+      YLFontBlack: "#000000"
     },
     fontFamily: {
       bodyFont: ["Roboto", "sans-serif"],

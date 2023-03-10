@@ -1,125 +1,182 @@
 import React from "react";
 import EmailForm from "./EmailForm";
 import heroImage from "../images/heroImage.svg";
+import iphoneMock from "../images/iphoneMock.svg";
+import arrow from "../images/arrow.svg";
+import articleSample from "../images/articleSample.svg";
+import content from "../images/content.svg";
+import onlineArticles from "../images/onlineArticles.svg";
+import controlPanel from "../images/controlPanel.svg";
+import techcrunchLogo from "../images/techcrunchLogo.svg";
+import nytLogo from "../images/nytLogo.svg";
+import washingtonpostLogo from "../images/washingtonpostLogo.svg";
+import bbcLogo from "../images/bbcLogo.svg";
 
 export default function LandingPage() {
   return (
     <>
-      <div
-        id="hero section"
-        className=" bg-altbackground w-[100vw] h-60 lg:h-[65vh] flex items-center justify-center"
-      >
-        <div id="hero" className="lg:w-[50vw]">
-          <h1 className="font-headerFont text-white text-xl lg:text-7xl mb-2 lg:mb-5">
-            Your interests, your inbox
-          </h1>
-          <h2 className="font-bodyFont text-primarytext text-sm lg:text-2xl lg:mb-3">
-            Optimize your mornings with a free personalized newsletter on the
-            content you care about
-          </h2>
-          <EmailForm></EmailForm>
-          <h3 className="font-bodyFont text-primarytext text-sm lg:text-xl">
-            Provide your email to join our waitlist.
-          </h3>
-        </div>
+      <div className=" bg-gradient-to-r from-YLBlueDark to-YLBlueLight w-screen h-60 lg:h-[80vh] flex items-center justify-center">
         <div
-          id="heroImgHolder"
-          className="w-[50vw] hidden lg:flex items-end justify-center h-[65vh]"
+          id="hero section"
+          className="w-screen max-w-[1536px] flex items-center justify-center"
         >
-          <img src={heroImage} alt="happy reader" className="h-[60vh]"></img>
-        </div>
-      </div>
-      <div id="about us" className="mb-20">
-        <div className="flex items-center justify-center w-[100vw]">
-          <div className="w-[90vw] lg:w-[60vw] bg-primarytext p-5 rounded-lg mt-10">
-            <h1 className="font-headerFont text-secondary text-2xl lg:text-7xl mb-2 lg:mb-10">
-              About YouLetter
+          <div
+            id="hero"
+            className="lg:w-1/2 flex flex-col items-center justify-center"
+          >
+            <h1 className="font-headerFont text-[#ffffff] text-2xl lg:text-5xl xl:text-6xl mb-2 lg:mb-3 lg:w-5/6">
+              Your interests, your inbox
             </h1>
-            <p className="font-bodyFont text-md lg:text-xl">
-              "Welcome to our personalized newsletter, powered by AI! Every
-              week, we bring you the most relevant and engaging content,
-              tailored specifically to your interests. Whether you're interested
-              in science and technology, business and finance, or just want to
-              stay up-to-date on the latest trends, our AI algorithms ensure
-              that you'll receive a newsletter that's truly personalized to you.
-              But that's not all - our AI technology also analyzes your reading
-              habits and suggests articles and resources that we think you'll
-              love. With our personalized newsletter, you'll never have to wade
-              through irrelevant content again. So why wait? Sign up now and
-              start receiving a newsletter that's truly tailored to your
-              interests and preferences. We can't wait to share all the amazing
-              content we have in store for you!"
-            </p>
+            <h2 className="font-bodyFont text-primarytext text-sm lg:text-xl xl:text-2xl lg:mb-1 w-[80%] lg:w-[85%] 2xl:w-[100%]">
+              Optimize your mornings with a free personalized newsletter on the
+              content you care about
+            </h2>
+            <EmailForm></EmailForm>
+          </div>
+          <div
+            id="heroImgHolder"
+            className="w-1/2 hidden lg:flex items-end justify-center h-[80vh]"
+          >
+            <img src={heroImage} alt="happy reader" className="h-4/6"></img>
           </div>
         </div>
       </div>
+
       <div
-        id="3ColDescriptions"
-        className="mb-20 w-[100vw] flex items-center justify-center"
+        id="Transition from site to newsletter section"
+        className="flex flex-col items-center w-screen mt-3 md:mt-6"
       >
-        <div className="flex justify-around flex-wrap w-[90vw] lg:w-[70vw]">
-          <div className="flex flex-col w-[90vw] lg:w-96 bg-primarytext p-5 mb-5 xlg:mb-0 rounded-lg">
-            <img src={heroImage} alt="happy reader" className="h-[15vh]"></img>
-            <h1 className="font-headerFont text-secondary text-2xl mb-2">
-              Perk Title
-            </h1>
-            <p className="font-bodyFont text-md lg:text-xl">
-              "Welcome to our personalized newsletter, powered by AI! Every
-              week, we bring you the most relevant and engaging content,
-              tailored specifically to your interests. Whether you're interested
-              in science and technology, business and finance, or just want to
-              stay up-to-date on the latest trends, our AI algorithms ensure
-              that you'll receive a newsletter that's truly personalized to you.
-              But that's not all - our AI technology also analyzes your reading
-              habits and suggests articles and resources that we think you'll
-              love. With our personalized newsletter, you'll never have to wade
-              through irrelevant content again. So why wait? Sign up now and
-              start receiving a newsletter that's truly tailored to your
-              interests and preferences. We can't wait to share all the amazing
-              content we have in store for you!"
-            </p>
+        <div className="flex flex-col items-center w-screen max-w-[1240px]">
+          <h1 className="font-headerFont w-4/5 max-w-[1100px] text-2xl lg:text-5xl xl:text-6xl mt-1 lg:mt-7">
+            {" "}
+            Daily Summarized Articles Straight to your Email{" "}
+          </h1>
+          <div className=" flex justify-center px-5 mb-3 xl:mb-5 ">
+            <div className="w-3/6 flex flex-col justify-center items-center px-4 mb-3 xl:mb-5">
+              <img src={articleSample} alt="Sample article from medium"></img>
+            </div>
+            <div className="w-1/6 flex flex-col justify-center items-center px-4 mb-3 xl:mb-5 ">
+              <img className="" src={arrow} alt="image of an arrow"></img>
+            </div>
+            <div className="w-2/6 flex flex-col justify-center items-center px-4 xl:mb-5">
+              <img className="h-5/6" src={iphoneMock} alt="mock of "></img>
+            </div>
           </div>
-          <div className="flex flex-col w-[90vw] lg:w-96 bg-primarytext p-5 mb-5 xlg:mb-0 rounded-lg">
-            <img src={heroImage} alt="happy reader" className="h-[15vh]"></img>
-            <h1 className="font-headerFont text-secondary text-2xl mb-2">
-              Perk Title
-            </h1>
-            <p className="font-bodyFont text-md lg:text-xl">
-              "Welcome to our personalized newsletter, powered by AI! Every
-              week, we bring you the most relevant and engaging content,
-              tailored specifically to your interests. Whether you're interested
-              in science and technology, business and finance, or just want to
-              stay up-to-date on the latest trends, our AI algorithms ensure
-              that you'll receive a newsletter that's truly personalized to you.
-              But that's not all - our AI technology also analyzes your reading
-              habits and suggests articles and resources that we think you'll
-              love. With our personalized newsletter, you'll never have to wade
-              through irrelevant content again. So why wait? Sign up now and
-              start receiving a newsletter that's truly tailored to your
-              interests and preferences. We can't wait to share all the amazing
-              content we have in store for you!"
-            </p>
+        </div>
+      </div>
+
+      <div
+        id="The New Newsletter"
+        className="flex flex-col items-center w-screen my-5 lg:my-16"
+      >
+        <div className="flex flex-col items-center w-screen max-w-[1240px]">
+          <div className=" max-w-[1240px] w-[90vw] rounded-xl flex flex-col sm:flex-row items-center p-8 pt-5">
+            <div className="sm:w-1/2 sm:mr-5">
+              <h1 className="font-headerFont sm:text-left text-2xl lg:text-3xl xl:text-4xl mb-1 lg:mb-2">
+                The New Newsletter
+              </h1>
+              <p className="sm:text-left text-md lg:text-xl xl:text-2xl font-bodyFont mb-8 sm:mb-0">
+                Let’s be honest, you don't really care about half the articles
+                old school newsletters send. We believe your morning newsletter
+                should be as unique as you are. That’s why at Youletter we
+                create a personalized newsletter based on your actual interests{" "}
+              </p>
+            </div>
+            <div className="w-5/6 sm:w-1/2 sm:ml-5 flex flex-col items-center">
+              <img src={onlineArticles} alt="happy reader" className=""></img>
+            </div>
           </div>
-          <div className="flex flex-col w-[90vw] lg:w-96 bg-primarytext p-5 mb-5 xlg:mb-0 rounded-lg">
-            <img src={heroImage} alt="happy reader" className="h-[15vh]"></img>
-            <h1 className="font-headerFont text-secondary text-2xl mb-2">
-              Perk Title
+        </div>
+      </div>
+
+      <div
+        id="AI Powered Summeries"
+        className="flex flex-col items-center w-screen my-5 lg:my-16"
+      >
+        <div className="flex flex-col items-center w-screen max-w-[1240px]">
+          <div className=" max-w-[1240px] w-[90vw] rounded-xl flex flex-col-reverse sm:flex-row items-center p-8 pt-5">
+            <div className="w-5/6 sm:w-1/2 sm:mr-5 flex flex-col items-center">
+              <img src={content} alt="happy reader" className=""></img>
+            </div>
+            <div className="sm:w-1/2 sm:ml-5">
+              <h1 className="font-headerFont sm:text-left text-2xl lg:text-3xl xl:text-4xl mb-1 lg:mb-2">
+                AI Powered Summaries
+              </h1>
+              <p className="sm:text-left text-md lg:text-xl xl:text-2xl font-bodyFont mb-1">
+                We utilize the newest AI Models to deliver bite-sized updates on
+                the topics you care about from the sources you love.
+              </p>
+              <p className="sm:text-left text-md lg:text-xl xl:text-2xl font-bodyFont mb-8 sm:mb-0">
+                Does a topic really catch your interest? Just click “Read More”
+                - We will take you to the full article so that you can enjoy it
+                in depth.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        id="Curate Your News"
+        className="flex flex-col items-center w-screen my-5 lg:my-16"
+      >
+        <div className="flex flex-col items-center w-screen max-w-[1240px]">
+          <div className=" max-w-[1240px] w-[90vw] rounded-xl flex flex-col sm:flex-row items-center p-8 pt-5">
+            <div className=" sm:w-1/2 sm:mr-5">
+              <h1 className="font-headerFont sm:text-left text-2xl lg:text-3xl xl:text-4xl mb-1 lg:mb-2">
+                Curate your news
+              </h1>
+              <p className="sm:text-left text-md lg:text-xl xl:text-2xl font-bodyFont mb-8 sm:mb-0">
+                Tailor your newsletter just how you like it. Simply sign in to
+                your personalized dashboard to select the topics and sites you
+                want to see articles from. We are constantly adding more sources
+                and sites so be sure to check back often.
+              </p>
+            </div>
+            <div className="w-5/6 sm:w-1/2 sm:ml-5 flex flex-col items-center">
+              <img src={controlPanel} alt="happy reader" className=""></img>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        id="beta Notice"
+        className="flex flex-col items-center my-6 w-screen mb-12 lg:mb-20"
+      >
+        <div className="flex flex-col items-center w-screen max-w-[1240px]">
+          <div className=" border-4  border-[#FFBD13] max-w-[1240px] w-[90vw] rounded-xl flex flex-col items-center p-8 pt-5">
+            <h1 className="font-headerFont text-2xl lg:text-3xl xl:text-4xl">
+              BETA ROADMAP
             </h1>
-            <p className="font-bodyFont text-md lg:text-xl">
-              "Welcome to our personalized newsletter, powered by AI! Every
-              week, we bring you the most relevant and engaging content,
-              tailored specifically to your interests. Whether you're interested
-              in science and technology, business and finance, or just want to
-              stay up-to-date on the latest trends, our AI algorithms ensure
-              that you'll receive a newsletter that's truly personalized to you.
-              But that's not all - our AI technology also analyzes your reading
-              habits and suggests articles and resources that we think you'll
-              love. With our personalized newsletter, you'll never have to wade
-              through irrelevant content again. So why wait? Sign up now and
-              start receiving a newsletter that's truly tailored to your
-              interests and preferences. We can't wait to share all the amazing
-              content we have in store for you!"
+            <p className="w-5/6 text-md lg:text-xl xl:text-2xl font-bodyFont mt-2">
+              You may have noticed that we are currently only integrating with
+              Medium. Do not fear! - We will be rolling out intigrations with
+              many of the top news and social media sources around. Please take
+              a look at the short list of intigrations already underway:{" "}
             </p>
+            <div className="flex items-center flex-wrap justify-between sm:w-2/3 mt-4">
+              <img
+                src={techcrunchLogo}
+                alt="happy reader"
+                className="w-12 mb-2 mx-1 sm:mx-0 rounded-full"
+              ></img>
+              <img
+                src={nytLogo}
+                alt="happy reader"
+                className="w-12 mb-2 mx-1 sm:mx-0 rounded-full"
+              ></img>
+              <img
+                src={washingtonpostLogo}
+                alt="happy reader"
+                className="w-12 mb-2 mx-1 sm:mx-0 rounded-full"
+              ></img>
+              <img
+                src={bbcLogo}
+                alt="happy reader"
+                className="w-12 mb-2 mx-1 sm:mx-0 rounded-full"
+              ></img>
+            </div>
           </div>
         </div>
       </div>
