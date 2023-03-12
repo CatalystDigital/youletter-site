@@ -49,7 +49,7 @@ export default function LandingPage() {
         <div className="flex flex-col items-center w-screen max-w-[1240px]">
           <h1 className="font-headerFont w-4/5 max-w-[1100px] text-2xl lg:text-5xl xl:text-6xl mt-1 lg:mt-7">
             {" "}
-            Daily Summarized Articles Straight to your Email{" "}
+            Daily Summarized Articles Straight to Your Email{" "}
           </h1>
           <div className=" flex justify-center px-5 mb-3 xl:mb-5 ">
             <div className="w-3/6 flex flex-col justify-center items-center px-4 mb-3 xl:mb-5">
@@ -59,7 +59,7 @@ export default function LandingPage() {
               <img className="" src={arrow} alt="image of an arrow"></img>
             </div>
             <div className="w-2/6 flex flex-col justify-center items-center px-4 xl:mb-5">
-              <img className="h-5/6" src={iphoneMock} alt="mock of "></img>
+              <img className="sm:h-5/6" src={iphoneMock} alt="mock of "></img>
             </div>
           </div>
         </div>
@@ -124,7 +124,7 @@ export default function LandingPage() {
           <div className=" max-w-[1240px] w-[90vw] rounded-xl flex flex-col sm:flex-row items-center p-8 pt-5">
             <div className=" sm:w-1/2 sm:mr-5">
               <h1 className="font-headerFont sm:text-left text-2xl lg:text-3xl xl:text-4xl mb-1 lg:mb-2">
-                Curate your news
+                Curate Your News
               </h1>
               <p className="sm:text-left text-md lg:text-xl xl:text-2xl font-bodyFont mb-8 sm:mb-0">
                 Tailor your newsletter just how you like it. Simply sign in to
@@ -159,22 +159,22 @@ export default function LandingPage() {
               <img
                 src={techcrunchLogo}
                 alt="happy reader"
-                className="w-12 mb-2 mx-1 sm:mx-0 rounded-full"
+                className="w-12 lg:w-16 mb-2 mx-1 sm:mx-0 rounded-full"
               ></img>
               <img
                 src={nytLogo}
                 alt="happy reader"
-                className="w-12 mb-2 mx-1 sm:mx-0 rounded-full"
+                className="w-12 lg:w-16 mb-2 mx-1 sm:mx-0 rounded-full"
               ></img>
               <img
                 src={washingtonpostLogo}
                 alt="happy reader"
-                className="w-12 mb-2 mx-1 sm:mx-0 rounded-full"
+                className="w-12 lg:w-16 mb-2 mx-1 sm:mx-0 rounded-full"
               ></img>
               <img
                 src={bbcLogo}
                 alt="happy reader"
-                className="w-12 mb-2 mx-1 sm:mx-0 rounded-full"
+                className="w-12 lg:w-16 mb-2 mx-1 sm:mx-0 rounded-full"
               ></img>
             </div>
           </div>
